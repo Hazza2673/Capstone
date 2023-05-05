@@ -20,13 +20,11 @@ $cracked = [
                 ['hash' => $request,      'pin'   => ''],
 ];
 $show = 15;
-$start  = 0;
-$end    = 9999;
 $time_pre = microtime(true);
 
 foreach($cracked AS $key => $hash)
 {
-    for($i=$start; $i<=$end; $i++)
+    for($i=0; $i<=9999; $i++)
     {
         $this_try = str_pad($i, 4, 0, STR_PAD_LEFT);
         $this_hash = md5($this_try);
@@ -50,6 +48,7 @@ foreach($cracked AS $key => $hash)
     }
 
 }
+// Loop through the array and print out the items
 foreach($cracked AS $crack)
 {
     echo '<br />' . 'Hash: ' . $crack['hash'] . ' -- PIN: ' . $crack['pin'] ;
