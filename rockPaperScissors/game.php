@@ -9,7 +9,7 @@ if ( isset($_POST['logout']) ) {
     return;
 }
 
-$names = array('Rock', 'Paper', 'Scissors');
+$names = ['Rock', 'Paper', 'Scissors'];
 $human = isset($_POST["human"]) ? $_POST['human']+0 : -1;
 $computer = rand(0,2);
 
@@ -40,12 +40,12 @@ $result = check($computer, $human);
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-<title>Rock, Paper, Scissors Game c44b034d</title>
-</head>
-<body>
-<div class="container">
-<h1>Rock Paper Scissors</h1>
+    <head>
+        <title>Rock, Paper, Scissors Game c44b034d</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Rock Paper Scissors</h1>
 <?php
 if ( isset($_REQUEST['name']) ) {
     echo "<p>Welcome: ";
@@ -77,7 +77,9 @@ if ( $human == -1 ) {
         }
     }
 } else {
-    print "Your Play=$names[$human] Computer Play=$names[$computer] Result=$result\n";
+    echo "Your Play= $names[$human]\n";
+    echo "Computer Play= $names[$computer]\n";
+    echo "Result= $result\n";
 }
 ?>
 </pre>

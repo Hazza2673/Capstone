@@ -3,6 +3,8 @@
 <html>
 <head>
     <title>MD5 Cracking by Harrison Sheard</title>
+    <?php require_once "bootstrap.php"; ?>
+
 </head>
 <body>
         <h1>My MD5 Cracker</h1>
@@ -22,6 +24,7 @@ $cracked = [
 $show = 15;
 $time_pre = microtime(true);
 
+if( $request != ""){
 foreach($cracked AS $key => $hash)
 {
     for($i=0; $i<=9999; $i++)
@@ -48,14 +51,17 @@ foreach($cracked AS $key => $hash)
     }
 
 }
-// Loop through the array and print out the items
+// Loop through the array and print out the
 foreach($cracked AS $crack)
 {
     echo '<br />' . 'Hash: ' . $crack['hash'] . ' -- PIN: ' . $crack['pin'] ;
 }
 
 }
+}
 ?></div>
+<a href="../">Exit to Main Page</a>
+
 </body>
 </html>
 

@@ -8,7 +8,9 @@
 <div class="container">
 <h1>Welcome to Rock Paper Scissors</h1>
 <p>
-<a href="login.php">Please Log In</a>
+<a href="login.php">Please Log In</a><br>
+<a href="../">Exit to Main Page</a>
+
 </p>
 <p>
 Attempt to go to 

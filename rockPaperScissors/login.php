@@ -1,17 +1,15 @@
-<?php // Do not put any HTML above this line
+<?php 
 
-if ( isset($_POST['cancel'] ) ) {
-    // Redirect the browser to game.php
+if ( isset($_GET['cancel'] ) ) {
     header("Location: index.php");
     return;
 }
 
 $salt = 'XyZzy12*_';
-$stored_hash = '1a52e17fa899cf40fb04cfc42e6352f1';  // Pw is meow123
+$stored_hash = '1a52e17fa899cf40fb04cfc42e6352f1';
 
 $failure = false;  // If we have no POST data
 
-// Check to see if we have some POST data, if we do process it
 if ( isset($_GET['who']) && isset($_GET['pass']) ) {
     if ( strlen($_GET['who']) < 1 || strlen($_GET['pass']) < 1 ) {
         $failure = "User name and password are required";
@@ -26,9 +24,8 @@ if ( isset($_GET['who']) && isset($_GET['pass']) ) {
         }
     }
 }
-
-// Fall through into the View
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

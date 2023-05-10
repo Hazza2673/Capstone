@@ -2,9 +2,16 @@
 <html>
     <head>
         <title>Guessing Game for Harrison Sheard 3fa7e755</title>
+        <?php require_once "bootstrap.php"; ?>
+
     </head>
     <body>
         <h1>Welcome to my guessing game</h1>
+        <form>
+            <input type="number" id="guess" name="guess">
+            <button type="submit" id="guess">Guess</button>
+            
+        </form>
         <?php 
             $number = "30";
             $result = "";
@@ -31,12 +38,14 @@
 
 
             if (!isset($_GET['guess'])){
-                $result = "Missing guess parameter";
+                $result = "Missing guess parameter, please guess a number";
             }
         
             echo $result;
         
             
         ?>
+        <br><a href="../">Exit to Main Page</a>
+
     </body>
 </html>
