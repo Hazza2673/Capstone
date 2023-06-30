@@ -2,33 +2,65 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-div#navbar{
+
+body#navbar{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-family: 'Karla';
 }
-div#links{
+
+
+nav#links{
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 ul.nav{
-  text-decoration: none;
   list-style: none;
-  display: flex;
-}
-ul.nav li{
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+font-weight: 500;
+width: 1000px;
 }
+nav li {
+  display: inline-block;
+  
+
+}
+a:-webkit-any-link{
+  text-decoration: none;
+  color: black;
+}
+div#footer{
+  background-color: #495E57;
+  
+}
+form#bookingForm{
+  font-family: 'Karla';
+  font-weight: 500;
+
+  display: grid; 
+  max-width: 200px; 
+  gap: 20px;
+  
+}
+form#bookingForm label{
+  font-family: 'Markazi Text';
+  font-weight:700;
+
+  
+}
+body#booking{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+
+}
+
+
 
 
 
