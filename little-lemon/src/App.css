@@ -34,17 +34,19 @@ a:-webkit-any-link{
   text-decoration: none;
   color: black;
 }
-div#footer{
+footer#footer{
   background-color: #495E57;
+  display: flex;
   
 }
 form#bookingForm{
   font-family: 'Karla';
   font-weight: 500;
-
+padding-bottom: 50px;
   display: grid; 
   max-width: 200px; 
-  gap: 20px;
+  gap: 50px;
+
   
 }
 form#bookingForm label{

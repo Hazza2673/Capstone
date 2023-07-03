@@ -99,11 +99,6 @@ const BookingForm = ({
         <Button title="Book a table" type="submit" />
       </div>
     </form>
-                    <p>Time : {formValues.time}</p>
-                    <p>Amount of guests: {formValues.people}</p>
-
-                    <p>Selected Date: {formValues.date}</p>
-                    <p>Occasion: {formValues.occasion}</p>
     </body>
   );
 };
