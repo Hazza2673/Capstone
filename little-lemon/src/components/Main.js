@@ -1,7 +1,17 @@
+import Nav from './Nav';
+import Footer from './Footer';
+import React, { useState, Component,useRef } from 'react';
+import BookingForm from './Booking/BookingForm';
+
+
 export default function Main() {
+
+
         return (
             <div className="main-grid">
-                <h1>This is the main area</h1>
+            <Nav/>
+                <BookingForm/>
+            <Footer/>
             </div>
         )
     }

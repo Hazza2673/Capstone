@@ -7,6 +7,7 @@ export default function Nav() {
                 <Link to='/' className='nav-item'><img id="logo" src={logo} alt="logo"/></Link>
                 <ul class="nav">
                     <li><Link to='/' className='nav-item'>Home</Link></li>
+                    <li><Link to='/main' className='nav-item'>Main</Link></li>
                     <li><Link to='/about-us' className='nav-item'>About</Link></li>
                     <li><Link to='/menu' className='nav-item'>Menu</Link></li>
                     <li><Link to='/reservations' className='nav-item'>Reservations</Link></li>
