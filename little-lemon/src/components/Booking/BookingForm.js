@@ -43,6 +43,7 @@ const BookingForm = ({
           type="date"
           id="date"
           name="date"
+          required
           onChange={handleInputChange}
           className={isFormSubmitted && !formValues.date ? "error" : ""}
         />
@@ -75,6 +76,7 @@ const BookingForm = ({
           name="people"
           min={minGuest}
           max={maxGuest}
+          required
           onChange={handleInputChange}
           className={isFormSubmitted && !formValues.people ? "error" : ""}
         />
@@ -86,6 +88,7 @@ const BookingForm = ({
         <select
           id="occasion"
           name="occasion"
+          required
           onChange={handleInputChange}
           className={isFormSubmitted && !formValues.occasion ? "error" : ""}
         >
@@ -96,7 +99,7 @@ const BookingForm = ({
         </select>
       </div>
       <div className="reservation-button">
-        <Button title="Book a table" type="submit" />
+        <Button title="Book a table" type="submit" aria-label="On Click"/>
       </div>
     </form>
     </body>
